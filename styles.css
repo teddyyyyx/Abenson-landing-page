@@ -277,17 +277,19 @@ header {
   display: flex;
 }
 
-.nav-right > .nav-login-container,
+.nav-login-container,
 .nav-right > a {
   padding: 0.8rem;
   height: 3.5rem;
   border-radius: 1rem;
   position: relative;
-  display: flex;
   align-items: center;
   font-weight: 600;
   gap: 8px;
   color: var(--white-color);
+}
+.nav-right > a {
+  display: flex;
 }
 
 .nav-right > .nav-login-container:hover,
@@ -412,6 +414,7 @@ header {
 }
 
 .nav-login-container,
+.nav-login-popup,
 .nav-cart-price,
 .nav-text {
   display: none;
