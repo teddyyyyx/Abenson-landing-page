@@ -123,7 +123,7 @@ header {
 }
 
 #nav-search-input {
-  padding: 0.8rem clamp(1rem, 2vw, 1.5rem);
+  padding: 0.8rem clamp(2.4rem, 2vw, 3.5rem) 0.8rem clamp(1rem, 2vw, 1.5rem);
   border-radius: 2rem;
   width: 100%;
   background-color: #4a4ebb;
@@ -145,13 +145,13 @@ header {
   fill: var(--main-text-color);
 }
 
-.main-header > form > button {
+.nav-search-button {
   position: absolute;
   background-color: transparent;
   overflow: unset;
   border: none;
   top: 0.8rem;
-  right: 1.5rem;
+  right: clamp(0.8rem, 2vw, 1.5rem);
 }
 
 .header-bottom,
@@ -257,19 +257,18 @@ header {
 
 .nav-right a {
   padding: 0.8rem;
+  height: 3.5rem;
   border-radius: 1rem;
   position: relative;
-}
-.nav-right a:hover {
-  background-color: var(--hover-on-blue-bg);
-}
-
-.nav-right > a {
   display: flex;
   align-items: center;
   font-weight: 600;
   gap: 8px;
   color: var(--white-color);
+}
+
+.nav-right a:hover {
+  background-color: var(--hover-on-blue-bg);
 }
 
 .nav-right > div > div {
@@ -285,7 +284,6 @@ header {
 .nav-cart-price {
   font-size: clamp(0.5rem, 1vw, 0.625rem);
   font-weight: 400;
-  margin-top: -0.1rem;
 }
 
 .nav-cart-qty {
@@ -356,6 +354,7 @@ header {
     content: "Cool Summer Promos";
   }
 }
+
 @media screen and (width > 868px) {
   .header-bottom {
     overflow-x: unset;
@@ -471,10 +470,12 @@ button:hover,
   .hero-buttons > a span {
     display: inline;
   }
+
   .hero-buttons > a {
     width: clamp(6.8rem, 28vw, 14.75rem);
   }
 }
+
 /* About Section  ---  About Section  ---  About Section  ---  About Section  ---  About Section  ---  About Section  ---  */
 
 #about-section {
@@ -699,6 +700,10 @@ button:hover,
   max-width: 25rem;
 }
 
+.jl-item:hover {
+  transform: scale(1.03);
+}
+
 .jl-item h2 {
   font-size: clamp(0.9rem, 1.5vw, 1rem);
   color: var(--primary-color);
@@ -722,13 +727,19 @@ button:hover,
 
 .toggle-label {
   display: inline-block;
-  /* margin-top: 2rem; */
   padding: 0.6rem 2rem;
   color: var(--primary-color);
   background-color: var(--white-color);
   border-radius: 2rem;
   border: 1px solid var(--primary-color);
   margin: 1.5rem auto 0;
+  cursor: pointer;
+}
+
+.toggle-label:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-weight: 600;
 }
 
 /* If toggle is checked, the button text is "See Less" */
@@ -1069,9 +1080,16 @@ footer div:first-child > form {
   padding: 1rem;
   max-width: 25rem;
 }
-.footer-social-icons a svg path:hover {
+.footer-social-icons a:hover {
+  transform: scale(1.1);
+}
+/* .footer-social-icons a svg path:hover {
+  fill: var(--secondary-color);
+} */
+.footer-social-icons a:hover path {
   fill: var(--secondary-color);
 }
+
 .footer-contacts {
   display: flex;
   flex-direction: column;
@@ -1105,7 +1123,7 @@ footer div:first-child > form {
   max-width: 30rem;
 }
 .footer-payment-icons img:hover {
-  transform: scale(1.1);
+  transform: scale(1.01);
   background-color: var(--hover-on-blue-bg);
   border-radius: 50%;
   padding: 0 0.5rem;
