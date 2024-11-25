@@ -376,12 +376,11 @@ header {
 /* Hero Section  ---   Hero Section  ---   Hero Section  ---   Hero Section  ---   Hero Section  ---   Hero Section  ---   Hero Section  ---    */
 
 #hero-section {
-  /* margin-top: -2rem; */
   position: relative;
   color: var(--white-color);
   max-width: var(--max-vw);
   width: 100%;
-  margin: -2rem auto 0;
+  margin: 0 auto 0;
   /* box-shadow: inset 0 -100px 200px -10px #1e22aa; */
 }
 
@@ -1045,10 +1044,6 @@ footer div:first-child > form {
   display: none;
 }
 /*  Footer third div child  ---------------3rd*/
-.footer-third-div hr {
-  /* margin: -0.5rem 0; */
-  /* display: none; */
-}
 
 .footer-third-div {
   display: flex;
