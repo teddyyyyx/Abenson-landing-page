@@ -35,9 +35,10 @@
                         stroke-linejoin="round" />
             </div>
             <ul>
-                <li><a href="https://www.abenson.com/pages/viber-personal-shopper">Store Locator</a></li>
-                <li><a href="https://www.abenson.com/tracker/order">Order Tracker</a></li>
-                <li><a href="https://www.abenson.com/pages/viber-personal-shopper">Viber Chat</a></li>
+                <li><a href="https://www.abenson.com/pages/viber-personal-shopper" target="_blank">Store Locator</a>
+                </li>
+                <li><a href="https://www.abenson.com/tracker/order" target="_blank">Order Tracker</a></li>
+                <li><a href="https://www.abenson.com/pages/viber-personal-shopper" target="_blank">Viber Chat</a></li>
                 <li class="nav-dropdown">Download Abenson Rewards
                     <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 9.5L12.5 16L19 9.5" stroke="#DADCE0" stroke-width="2" stroke-linecap="round"
@@ -69,7 +70,9 @@
             </form>
 
             <div class="nav-right">
-                <a href="">
+                <!-- added aria attribute to indicate screen readers that thiss button will display additional content  xbenz-->
+                <button aria-controls="login-popup" aria-expanded="true" aria-haspopup="true"
+                    class="nav-login-container">
                     <svg class="nav-login-icon" width="20" height="24" viewBox="0 0 20 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -80,7 +83,58 @@
                             fill="#9AC8FF" />
                     </svg>
                     <span class="nav-text">Login</span>
-                </a>
+                </button>
+
+                <div class="login-popup">
+                    <p>New to Abenson? <a href="https://www.abenson.com/create-account" target="_blank">Register</a></p>
+                    <ul id="login-popup">
+                        <li>
+                            <button>
+                                <img src="/images/login_popup/login_popup_1.svg" alt="">
+                                My Profile
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <img src="/images/login_popup/login_popup_2.svg" alt="">
+                                Orders
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <img src="/images/login_popup/login_popup_3.svg" alt="">
+                                Wishlist
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <img src="/images/login_popup/login_popup_4.svg" alt="">
+                                Reviews
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <img src="/images/login_popup/login_popup_5.svg" alt="">
+                                Returns
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <img src="/images/login_popup/login_popup_6.svg" alt="">
+                                Easy Ink
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <img src="/images/login_popup/login_popup_7.svg" alt="">
+                                Affiliate
+                            </button>
+                        </li>
+                    </ul>
+
+                </div>
+
+
                 <a href="">
                     <div>
                         <svg class="nav-cart-icon" width="27" height="25" viewBox="0 0 27 25" fill="none"
@@ -141,7 +195,8 @@
                 <p>We’re here to make people happy through technology. Be a part of a high performance team and grow
                     your career with us</p>
                 <div class="hero-buttons">
-                    <a href="#"><span>Check for </span>Openings</a>
+                    <a href="https://recruitment.dataon.com/abensongroup/" target="_blank"><span>Check for
+                        </span>Openings</a>
                     <a href="#">Submit <span>Resume</span></a>
                 </div>
             </div>
@@ -454,18 +509,20 @@
                     </form>
                 </div>
                 <div class="banner-container">
-                    <picture>
-                        <source media="(width > 968px)" srcset="/images/footer_img/footer_desktop_banner.webp"
-                            type="image/webp">
-                        <source media="(width > 968px)" srcset="/images/footer_img/footer_desktop_banner.png"
-                            type="image/png">
-                        <source media="(width <= 968px)" srcset="/images/footer_img/footer_mobile_banner.webp"
-                            type="image/webp">
-                        <source media="(width <= 968px)" srcset="/images/footer_img/footer_mobile_banner.png"
-                            type="image/png">
-                        <img src="/images/footer_img/footer_mobile_banner.png" alt="Abenson Rewards"
-                            class="footer-banner-img">
-                    </picture>
+                    <a href="https://www.abenson.com/our-rewards-system" target="_blank">
+                        <picture>
+                            <source media="(width > 968px)" srcset="/images/footer_img/footer_desktop_banner.webp"
+                                type="image/webp">
+                            <source media="(width > 968px)" srcset="/images/footer_img/footer_desktop_banner.png"
+                                type="image/png">
+                            <source media="(width <= 968px)" srcset="/images/footer_img/footer_mobile_banner.webp"
+                                type="image/webp">
+                            <source media="(width <= 968px)" srcset="/images/footer_img/footer_mobile_banner.png"
+                                type="image/png">
+                            <img src="/images/footer_img/footer_mobile_banner.png" alt="Abenson Rewards"
+                                class="footer-banner-img">
+                        </picture>
+                    </a>
 
                     <div>
                         <a target="_blank" href="https://www.abenson.com/our-rewards-system">
@@ -622,19 +679,18 @@
                                 </defs>
                             </svg>
                         </a>
-                        <!-- Whatsapp icon -->
+                        <!-- Viber icon -->
                         <a href="">
-                            <svg width="27" height="30" viewBox="0 0 27 30" fill="none"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <rect x="0.986877" y="0.5" width="26" height="29" fill="url(#pattern0_15_4684)" />
-                                <defs>
-                                    <pattern id="pattern0_15_4684" patternContentUnits="objectBoundingBox" width="1"
-                                        height="1">
-                                        <use xlink:href="#image0_15_4684" transform="scale(0.0128205 0.0114943)" />
-                                    </pattern>
-                                    <image id="image0_15_4684" width="78" height="87"
-                                        xlink:href="data:image/png;base64,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" />
-                                </defs>
+                            <svg width="24px" height="24px" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13 4a1 1 0 1 0 0 2c1.273 0 2.256.42 2.918 1.082C16.58 7.744 17 8.727 17 10a1 1 0 1 0 2 0c0-1.727-.58-3.244-1.668-4.332C16.244 4.58 14.727 4 13 4zM5.014 8.006c.114-.904 1.289-2.132 2.22-1.996V6.01c.779.148 1.418 1.32 1.84 2.093.069.127.132.244.19.343.286.509.1 1.025-.167 1.243L9 9.765c-.356.283-.819.65-.71 1.018C8.5 11.5 11 14 12.23 14.711c.376.217.669-.205.92-.567.059-.086.116-.168.17-.237.21-.28.727-.447 1.235-.171.759.442 1.474.956 2.135 1.534.33.276.408.684.179 1.115-.403.76-1.569 1.76-2.415 1.557C12.976 17.587 7 15.27 5.08 8.558c-.1-.296-.084-.42-.07-.528l.004-.024z"
+                                    fill="#ffffff" />
+                                <path
+                                    d="M13 7a1 1 0 1 0 0 2c.175 0 .433.097.668.332.235.235.332.493.332.668a1 1 0 1 0 2 0c0-.825-.402-1.567-.918-2.082C14.567 7.403 13.825 7 13 7z"
+                                    fill="#ffffff" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.517 23.831c.029.016.058.03.088.043.543.233 1.213-.288 2.552-1.33L11.5 21.5c2.688.089 5.014-.264 6.812-.893a7 7 0 0 0 4.295-4.295c.97-2.771.97-7.853 0-10.624a7 7 0 0 0-4.295-4.295c-3.202-1.12-9.482-1.1-12.624 0a7 7 0 0 0-4.295 4.295c-.97 2.77-.97 7.853 0 10.624a7 7 0 0 0 4.295 4.295c.395.138.836.29 1.312.393 0 1.697 0 2.546.517 2.831zM9 20.911v-1.12a.498.498 0 0 0-.394-.488c-.762-.163-1.52-.325-2.257-.584a5 5 0 0 1-3.068-3.068c-.382-1.091-.615-2.806-.615-4.651 0-1.845.233-3.56.615-4.652A5 5 0 0 1 6.349 3.28c1.267-.443 3.368-.717 5.63-.72 2.263-.002 4.377.267 5.672.72a5 5 0 0 1 3.068 3.068c.382 1.092.615 2.807.615 4.652 0 1.845-.233 3.56-.615 4.651a5 5 0 0 1-3.068 3.068c-2.131.746-4.392.83-6.627.764a.503.503 0 0 0-.324.105L9 20.911z"
+                                    fill="#ffffff" />
                             </svg>
                         </a>
                     </div>
@@ -655,7 +711,7 @@
                                     <img src="images/footer_img/phone_icon.svg" alt="">
                                     <span>
                                         <a href="tel:+639088177788">09088177788</a>
-
+                                        |
                                         <a href="tel:+639999906141">09999906141</a>
                                     </span>
                                 </li>
@@ -753,6 +809,7 @@
                         </div>
                         <hr>
 
+
                         <!-- Footer Contacts - Business Solution- 3 -->
                         <div class="footer-contacts  contacts-3 f-contacts-hide">
                             <input type="checkbox" name="contacts-3-dropdown" id="contacts-3-dropdown"
@@ -801,9 +858,6 @@
             <p class="footer-p-mobile">Copyright © 2022 Abenson Ventures Inc. All rights reserved.</p>
         </div>
     </footer>
-
-
-
 </body>
 
 </html>
