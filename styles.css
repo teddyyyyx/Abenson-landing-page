@@ -351,6 +351,10 @@ header {
   .nav-cart-icon > path:nth-last-of-type(3) {
     fill: #019bf0;
   }
+
+  #nav-search-input::placeholder {
+    content: "Cool Summer Promos";
+  }
 }
 @media screen and (width > 868px) {
   .header-bottom {
