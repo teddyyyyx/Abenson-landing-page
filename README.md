@@ -1,6 +1,6 @@
 # Abenson-landing-page
 
-## Introduction
+## Introduction : 🤟
 
 Hi, I'm Benz Samson Tagle, and I built this project entirely from scratch using only HTML and CSS. My focus was on minimizing JavaScript usage and leveraging the capabilities of modern HTML and CSS to create a responsive, clean, and optimized website.
 
@@ -10,7 +10,7 @@ This website is fully optimized and SEO-friendly, featuring appropriate meta tag
 
 The project is uploaded to GitHub and deployed on Vercel for seamless accessibility.
 
-## My Notes ::::
+## My Notes :: 🤟🤟
 
 To achieve a responsive, clean, and optimized design, a well-structured HTML and CSS foundation is crucial. Below are the practices implemented in this project:
 
@@ -71,17 +71,15 @@ To achieve a responsive, clean, and optimized design, a well-structured HTML and
 - **Optimized Pictures**:  
   Images are primarily in WebP format for faster loading, with fallback formats (JPEG/PNG) provided for browser compatibility.
 
----
-
 These practices ensure the website is responsive, optimized, and SEO-friendly while leveraging the full potential of modern HTML and CSS.
+
+---
 
 # Website Structure Documentation
 
-## Overview
+## HTML Overview ::: 🤟🤟🤟
 
 This document provides a detailed breakdown of HTML structure that I made.
-
----
 
 ## Header
 
@@ -95,8 +93,6 @@ The header is divided into three parts:
 
 - **`header-bottom`**  
   A list container (`<ul>`) for secondary navigation, category links, or quick access items.
-
----
 
 ## Main Content
 
@@ -122,8 +118,6 @@ The main content contains multiple sections, each with a specific purpose:
 
 7. **`social-section`**  
    Includes Facebook, Jobstreet, and Linkedin link icons.
-
----
 
 ## Footer
 
@@ -153,3 +147,5 @@ The primary footer container is divided into three sections:
 - A `<p>` element for displaying the © Copyright text.
 
 ---
+
+https://benztagle.vercel.app/ | https://zenn2.vercel.app/
