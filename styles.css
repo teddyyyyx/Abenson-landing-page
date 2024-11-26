@@ -587,11 +587,11 @@ header {
 
 .hero-text {
   position: absolute;
-  bottom: clamp(2rem, 3vw, 3rem);
+  bottom: clamp(1.2rem, 3vw, 3rem);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: clamp(0.5rem, 1vw, 1rem);
+  gap: clamp(0.4rem, 1vw, 1rem);
   text-align: center;
 }
 
