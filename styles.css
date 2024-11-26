@@ -968,6 +968,10 @@ label#file {
   outline: none;
 }
 
+label#file {
+  padding: 0.8rem 0;
+}
+
 /* Removes the default file upload button, sibling label is used as button */
 ::-webkit-file-upload-button,
 ::file-selector-button {
@@ -982,11 +986,11 @@ label#file {
 }
 
 label#file {
-  color: var(--ter-blue-color);
-  border: 1px solid var(--ter-blue-color);
-  z-index: 1;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
   font-size: clamp(0.8rem, 2vw, 1rem);
   cursor: pointer;
+  /* background-color: red; */
 }
 input#file {
   color: var(--main-text-color);
@@ -1051,7 +1055,13 @@ input#name:not(:placeholder-shown):invalid ~ label#name {
   color: var(--white-color);
   font-weight: 600;
 }
+.contact-header {
+  text-align: center;
+}
 
+#contact-section {
+  text-align: center;
+}
 /* Socials Section --- Socials Section --- Socials Section */
 
 #socials-section {
