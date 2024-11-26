@@ -47,6 +47,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -160,7 +161,7 @@ header {
 }
 
 #nav-search-input:focus {
-  background-color: white;
+  background-color: var(--body-color);
   color: var(--main-text-color);
 }
 
@@ -201,11 +202,11 @@ header {
   background-color: #f1f2f6;
   position: relative;
 }
-.header-top > ul {
+.header-top ul {
   color: var(--sub-text-color);
   display: flex;
   height: max-content;
-  gap: clamp(0.5rem, 3vw, 0.5rem);
+  gap: clamp(0rem, 1vw, 0.5rem);
 }
 
 .nav-dropdown-shops,
@@ -393,7 +394,7 @@ header {
 
 .nav-cart-qty {
   position: absolute;
-  top: 0.2rem;
+  top: 0.5rem;
   right: 1rem;
   background-color: var(--secondary-color);
   width: 1.2rem;
@@ -472,7 +473,7 @@ header {
   padding: 0.6rem;
   background-color: var(--white-color);
   position: absolute;
-  top: 9.8rem;
+  top: 9.2rem;
   display: none;
   z-index: 999;
   right: -4.5rem;
@@ -550,7 +551,7 @@ header {
   }
 }
 
-@media screen and (width > 1024px) {
+@media screen and (width > 960px) {
   .nav-cart-price,
   .nav-text {
     display: block;
@@ -996,11 +997,14 @@ input#file {
   padding: 1rem 0 0 1.2rem;
 }
 
+/* input#file:not([value=" "]) {
+  color: var(--ter-blue-color);
+} */
+
 /* Added label for file input, this is a pseudo element that acts as label */
 label#file::after {
   content: "Attached Resume";
 }
-
 input#name,
 input#email {
   border: 1px solid var(--main-text-color);
@@ -1041,10 +1045,11 @@ input#name:not(:placeholder-shown):invalid ~ label#name {
   position: absolute;
   left: 1rem;
   top: -0.6rem;
-  padding: 0.2rem;
+  padding: 0 0.2rem;
+  border-radius: 1rem;
   font-size: 0.8rem;
   color: var(--main-text-color);
-  background-color: var(--white-color);
+  background-color: var(--body-color);
   cursor: pointer;
 }
 
@@ -1087,7 +1092,7 @@ input#name:not(:placeholder-shown):invalid ~ label#name {
   transform: scale(1.3);
   background-color: var(--primary-color);
   border-radius: 50%;
-  padding: 0.1rem;
+  padding: 0.2rem;
   transition: all 0.2s ease-in-out;
 }
 @media screen and (width > 600px) {
