@@ -1,8 +1,7 @@
 :root {
   --primary-color: #1e22aa;
   --secondary-color: #fae100;
-  --body-color: #fdfcff;
-  --white-color: #ffffff;
+  --white-color: #fdfcff;
   --main-text-color: #4c525c;
   --sub-text-color: #767676;
 
@@ -161,7 +160,7 @@ header {
 }
 
 #nav-search-input:focus {
-  background-color: var(--body-color);
+  background-color: var(--white-color);
   color: var(--main-text-color);
 }
 
@@ -850,13 +849,11 @@ header {
 
 #job-list-section {
   background-color: #e5f6ff;
-  background-image: url(images/jl_background.svg);
   border-radius: 0.6rem;
   padding: 2.5rem 2.5rem 3rem 2.5rem;
   align-items: unset !important;
   max-width: var(--max-vw);
   width: 100%;
-  background-position: center;
   margin: 0 auto;
 }
 
@@ -942,6 +939,10 @@ header {
 }
 
 @media screen and (width > 630px) {
+  #job-list-section {
+    background-image: url("images/jl_background.svg");
+    background-position: center;
+  }
   .jl-container {
     height: unset;
   }
@@ -1049,7 +1050,7 @@ input#name:not(:placeholder-shown):invalid ~ label#name {
   border-radius: 1rem;
   font-size: 0.8rem;
   color: var(--main-text-color);
-  background-color: var(--body-color);
+  background-color: var(--white-color);
   cursor: pointer;
 }
 
@@ -1109,8 +1110,8 @@ footer {
   position: relative;
   margin-top: 2rem;
   width: 100%;
-  background-color: var(--primary-color);
-  background-image: url("images/footer_img/footer_background.jpg");
+  /* background-color: var(--primary-color); */
+  background-image: url("images/footer_img/footer_background.webp");
 }
 .footer-main {
   margin: 0 auto;
@@ -1231,15 +1232,15 @@ footer div:first-child > form {
 
 .banner-container > div {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   position: absolute;
-  bottom: 33%;
-  right: 8%;
+  bottom: 28%;
+  right: 6%;
   color: var(--white-color);
 }
 
 .banner-container > div > a {
-  font-size: clamp(0.7rem, 2vw, 1rem);
+  font-size: clamp(0.8rem, 2vw, 1rem);
   text-decoration: underline;
 }
 
@@ -1261,7 +1262,7 @@ footer div:first-child > form {
   padding: 1rem auto;
   gap: 1rem;
 }
-.footer-third-div h2 {
+.h2-hidden {
   display: none;
 }
 
@@ -1448,9 +1449,10 @@ footer div:first-child > form {
 
   .banner-container > div a {
     text-decoration: underline;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 400;
   }
+
   .banner-container > div {
     bottom: -1.5rem;
     left: 50%;
@@ -1636,3 +1638,5 @@ footer div:first-child > form {
     justify-content: space-around;
   }
 }
+
+/* Fully hand coded by Benz Samson Tagle --  https://benztagle.vercel.app/*/
