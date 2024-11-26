@@ -250,10 +250,6 @@ header {
   color: var(--sub-text-color);
 }
 
-.header-bottom li:nth-child(2) a {
-  display: flex;
-}
-
 .sub-text {
   color: var(--sub-text-color);
 }
@@ -282,7 +278,8 @@ header {
   color: var(--white-color);
   position: relative;
 }
-
+.header-bottom li:nth-child(2) a,
+.nav-right > a,
 .nav-right a:last-of-type > div:first-of-type {
   display: flex;
 }
@@ -297,9 +294,6 @@ header {
   font-weight: 600;
   gap: 8px;
   color: var(--white-color);
-}
-.nav-right > a {
-  display: flex;
 }
 
 .nav-right > .nav-login-container:hover,
@@ -510,13 +504,10 @@ header {
     height: 4.375rem;
   }
 
+  .header-top,
+  .header-bottom,
   .nav-login-container:first-child,
   .nav-login-container {
-    display: flex;
-  }
-
-  .header-top,
-  .header-bottom {
     display: flex;
   }
 
@@ -569,7 +560,6 @@ header {
   max-width: var(--max-vw);
   width: 100%;
   margin: 0 auto 0;
-  /* box-shadow: inset 0 -100px 200px -10px #1e22aa; */
 }
 
 .hero-img {
@@ -999,10 +989,6 @@ input#file {
   padding: 1rem 0 0 1.2rem;
 }
 
-/* input#file:not([value=" "]) {
-  color: var(--ter-blue-color);
-} */
-
 /* Added label for file input, this is a pseudo element that acts as label */
 label#file::after {
   content: "Attached Resume";
@@ -1151,10 +1137,11 @@ footer label,
 footer a,
 footer p {
   color: var(--white-color);
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-weight: 300;
 }
 
+.h2-hidden,
 .payment-methods-h2 {
   display: none;
 }
@@ -1165,7 +1152,6 @@ footer a:hover {
   color: var(--secondary-color);
 }
 footer h2 {
-  font-weight: 600;
   font-size: 1rem;
   color: var(--secondary-color);
   text-wrap: nowrap;
@@ -1263,9 +1249,6 @@ footer div:first-child > form {
   padding: 1rem auto;
   gap: 1rem;
 }
-.h2-hidden {
-  display: none;
-}
 
 .footer-social-icons {
   display: flex;
@@ -1280,9 +1263,7 @@ footer div:first-child > form {
 .footer-social-icons a:hover {
   transform: scale(1.1);
 }
-/* .footer-social-icons a svg path:hover {
-  fill: var(--secondary-color);
-} */
+
 .footer-social-icons a:hover path {
   fill: var(--secondary-color);
 }
@@ -1466,8 +1447,7 @@ footer div:first-child > form {
     animation: moveUpDown 3s ease-in-out infinite;
   }
 
-  .footer-third-last-child div hr,
-  .footer-third-div h2 {
+  .footer-third-last-child div hr {
     display: block;
   }
 
@@ -1539,6 +1519,7 @@ footer div:first-child > form {
     max-height: 100rem;
   }
 
+  .h2-desktop-hidden,
   .footer-p-mobile,
   .footer-contacts h3,
   .footer-second-div hr,
@@ -1554,7 +1535,6 @@ footer div:first-child > form {
   .footer-section > h2 {
     display: block;
     font-size: 1rem;
-    font-weight: 500;
   }
   .dropdown-content li {
     padding: 0;
