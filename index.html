@@ -20,7 +20,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
+    <link rel="preload"
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 </head>
@@ -136,43 +136,43 @@
                     <ul id="login-popup">
                         <li>
                             <button>
-                                <img src="/images/login_popup/login_popup_1.svg" alt="" loading="lazy">
+                                <img src="/images/login_popup/login_popup_1.svg" alt="My Profile icon" loading="lazy">
                                 My Profile
                             </button>
                         </li>
                         <li>
                             <button>
-                                <img src="/images/login_popup/login_popup_2.svg" alt="" loading="lazy">
+                                <img src="/images/login_popup/login_popup_2.svg" alt="Orders icon" loading="lazy">
                                 Orders
                             </button>
                         </li>
                         <li>
                             <button>
-                                <img src="/images/login_popup/login_popup_3.svg" alt="" loading="lazy">
+                                <img src="/images/login_popup/login_popup_3.svg" alt="Wishlist icon" loading="lazy">
                                 Wishlist
                             </button>
                         </li>
                         <li>
                             <button>
-                                <img src="/images/login_popup/login_popup_4.svg" alt="" loading="lazy">
+                                <img src="/images/login_popup/login_popup_4.svg" alt="Reviews icon" loading="lazy">
                                 Reviews
                             </button>
                         </li>
                         <li>
                             <button>
-                                <img src="/images/login_popup/login_popup_5.svg" alt="" loading="lazy">
+                                <img src="/images/login_popup/login_popup_5.svg" alt="Returns icon" loading="lazy">
                                 Returns
                             </button>
                         </li>
                         <li>
                             <button>
-                                <img src="/images/login_popup/login_popup_6.svg" alt="" loading="lazy">
+                                <img src="/images/login_popup/login_popup_6.svg" alt="Easy Ink icon" loading="lazy">
                                 Easy Ink
                             </button>
                         </li>
                         <li>
                             <button>
-                                <img src="/images/login_popup/login_popup_7.svg" alt="" loading="lazy">
+                                <img src="/images/login_popup/login_popup_7.svg" alt="Affiliate icon" loading="lazy">
                                 Affiliate
                             </button>
                         </li>
@@ -228,11 +228,15 @@
         <!-- Hero Section -->
         <section id="hero-section">
             <picture class="hero-img">
-                <source media="(width >= 650px)" srcset="/images/hero_desktop_img.webp" type="image/webp">
-                <source media="(width >= 650px)" srcset="/images/hero_desktop_img.jpg" type="image/jpg">
+                <source media="(width >= 650px)" srcset="/images/hero_desktop_img.webp" width="1240" height="517"
+                    type="image/webp">
+                <source media="(width >= 650px)" srcset="/images/hero_desktop_img.jpg" width="1240" height="517"
+                    type="image/jpg">
 
-                <source media="(width < 650px)" srcset="/images/hero_mobile_img.webp" type="image/webp">
-                <source media="(width < 650px)" srcset="/images/hero_mobile_img.jpg" type="image/jpg">
+                <source media="(width < 650px)" srcset="/images/hero_mobile_img.webp" width="718" height="572"
+                    type="image/webp">
+                <source media="(width < 650px)" srcset="/images/hero_mobile_img.jpg" width="718" height="572"
+                    type="image/jpg">
 
                 <img src="/images/hero_mobile_img.jpg" alt="hero background" class="hero-img">
             </picture>
@@ -265,7 +269,8 @@
                     <picture>
                         <source srcset="/images/about_img/about_1.webp" type="image/webp">
                         <source srcset="/images/about_img/about_1.jpg" type="image/jpg">
-                        <img src="/images/about_img/about_1.jpg" alt="Mission" class="about-img">
+                        <img src="/images/about_img/about_1.jpg" width="400" height="425" alt="Mission"
+                            class="about-img">
                     </picture>
                     <div class="about-card-text">
                         <h2>Mission</h2>
@@ -280,7 +285,8 @@
                     <picture>
                         <source srcset="/images/about_img/about_2.webp" type="image/webp">
                         <source srcset="/images/about_img/about_2.jpg" type="image/jpg">
-                        <img src="/images/about_img/about_2.jpg" alt="Mission" class="about-img" loading="lazy">
+                        <img src="/images/about_img/about_2.jpg" width="400" height="425" alt="Mission"
+                            class="about-img" loading="lazy">
                     </picture>
                     <div class="about-card-text">
                         <h2>Vision</h2>
@@ -294,7 +300,8 @@
                     <picture>
                         <source srcset="/images/about_img/about_3.webp" type="image/webp">
                         <source srcset="/images/about_img/about_3.jpg" type="image/jpg">
-                        <img src="/images/about_img/about_3.jpg" alt="Mission" class="about-img" loading="lazy">
+                        <img src="/images/about_img/about_3.jpg" width="400" height="425" alt="Mission"
+                            class="about-img" loading="lazy">
                     </picture>
                     <div class="about-card-text">
                         <h2>Core Values</h2>
@@ -360,39 +367,46 @@
 
             <div class="teams-container">
                 <div class="teams-item">
-                    <img src="/images/teams_img/team_1.svg" alt="" class="teams-img" loading="lazy">
+                    <img src="/images/teams_img/team_1.svg" alt="UI/UX Teams" class="teams-img" loading="lazy">
                     <h2>UI/UX</h2>
                 </div>
                 <div class="teams-item">
-                    <img src="/images/teams_img/team_1.svg" alt="" class="teams-img" loading="lazy">
+                    <img src="/images/teams_img/team_1.svg" alt="Mobile App & Loyalty Teams" class="teams-img"
+                        loading="lazy">
                     <h2>Mobile App & Loyalty</h2>
                 </div>
                 <div class="teams-item">
-                    <img src="/images/teams_img/team_1.svg" alt="" class="teams-img" loading="lazy">
+                    <img src="/images/teams_img/team_1.svg" alt="Digital Marketing Teams" class="teams-img"
+                        loading="lazy">
                     <h2>Digital Marketing</h2>
                 </div>
                 <div class="teams-item">
-                    <img src="/images/teams_img/team_1.svg" alt="" class="teams-img" loading="lazy">
+                    <img src="/images/teams_img/team_1.svg" alt="Digital Development Teams" class="teams-img"
+                        loading="lazy">
                     <h2>Digital Development</h2>
                 </div>
                 <div class="teams-item">
-                    <img src="/images/teams_img/team_1.svg" alt="" class="teams-img" loading="lazy">
+                    <img src="/images/teams_img/team_1.svg" alt="Smile Serve (Logistics) Teams" class="teams-img"
+                        loading="lazy">
                     <h2>Smile Serve (Logistics)</h2>
                 </div>
                 <div class="teams-item">
-                    <img src="/images/teams_img/team_1.svg" alt="" class="teams-img" loading="lazy">
+                    <img src="/images/teams_img/team_1.svg" alt="Systems Development Teams" class="teams-img"
+                        loading="lazy">
                     <h2>Systems Development</h2>
                 </div>
                 <div class="teams-item">
-                    <img src="/images/teams_img/team_1.svg" alt="" class="teams-img" loading="lazy">
+                    <img src="/images/teams_img/team_1.svg" alt="Shop Online Operation Teams" class="teams-img"
+                        loading="lazy">
                     <h2>Shop Online Operations</h2>
                 </div>
                 <div class="teams-item">
-                    <img src="/images/teams_img/team_1.svg" alt="" class="teams-img" loading="lazy">
+                    <img src="/images/teams_img/team_1.svg" alt="Digital Product Teams" class="teams-img"
+                        loading="lazy">
                     <h2>Digital Products</h2>
                 </div>
                 <div class="teams-item">
-                    <img src="/images/teams_img/team_1.svg" alt="" class="teams-img" loading="lazy">
+                    <img src="/images/teams_img/team_1.svg" alt="Data Teams" class="teams-img" loading="lazy">
                     <h2>Data</h2>
                 </div>
             </div>
@@ -598,7 +612,7 @@
                         <label for="discover-toggle" class="dropdown-toggle">
                             <span>Discover</span>
                             <span>
-                                <img src="/images/dropdown_button.svg" alt="" loading="lazy">
+                                <img src="/images/dropdown_button.svg" alt="dropdown icon" loading="lazy">
                             </span>
                         </label>
 
@@ -617,7 +631,8 @@
                         <label for="support-toggle" class="dropdown-toggle">
                             <span>Support</span>
                             <span>
-                                <img src="/images/dropdown_button.svg" alt="" loading="lazy">
+                                <img src="/images/dropdown_button.svg" alt="Support Section dropdown icon"
+                                    loading="lazy">
                             </span>
                         </label>
                         <h2>Support</h2>
@@ -637,7 +652,7 @@
                         <label for="services-toggle" class="dropdown-toggle">
                             <span>Our Services</span>
                             <span>
-                                <img src="/images/dropdown_button.svg" alt="" loading="lazy">
+                                <img src="/images/dropdown_button.svg" alt="Our Services dropdown icon" loading="lazy">
                             </span>
                         </label>
 

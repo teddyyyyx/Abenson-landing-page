@@ -682,6 +682,7 @@ header {
 }
 .about-img {
   width: clamp(11.75rem, 30vw, 25rem);
+  height: auto;
   object-fit: contain;
   border-radius: 0.6rem;
 }
@@ -893,7 +894,7 @@ header {
 
 .jl-item p {
   line-height: 1rem;
-  color: var(--sub-text-color);
+  color: var(--main-text-color);
   font-size: clamp(0.7rem, 1.5vw, 0.8rem);
 }
 
@@ -1240,7 +1241,7 @@ footer div:first-child > form {
 }
 
 .banner-container > div > a {
-  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-size: clamp(0.9rem, 2vw, 1rem);
   text-decoration: underline;
 }
 
