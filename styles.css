@@ -16,6 +16,7 @@
   --p-font-size: clamp(0.8rem, 1.8vw, 1rem);
   --dropdown-transition: 0.5s ease-out;
   --hover-on-blue-bg: rgba(0, 0, 0, 0.3);
+  --popup-radius: 0.93rem;
   --popup-box-shadow: 0px 106px 42px rgba(0, 0, 0, 0.01),
     0px 60px 36px rgba(0, 0, 0, 0.05), 0px 27px 27px rgba(0, 0, 0, 0.09),
     0px 7px 15px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
@@ -196,8 +197,9 @@ header {
 .header-top {
   font-size: 0.75rem;
   height: 2.125rem;
-  padding: 0.375rem clamp(3rem, 5vw, 1.875rem);
+  padding: 0.375rem clamp(0rem, 2vw, 3rem);
   background-color: #f1f2f6;
+  position: relative;
 }
 .header-top > ul {
   color: var(--sub-text-color);
@@ -206,15 +208,20 @@ header {
   gap: clamp(0.5rem, 3vw, 0.5rem);
 }
 
-.nav-dropdown svg {
-  width: 1rem;
+.nav-dropdown-shops,
+.nav-dropdown-rewards {
+  gap: 0.5rem;
 }
 
-.nav-dropdown path {
-  stroke: var(--sub-text-color);
+.nav-dropdown-shops svg,
+.nav-dropdown-rewards svg {
+  width: 1rem;
+  height: auto;
 }
-.header-top div:first-child {
-  gap: 0.5rem;
+
+.nav-dropdown-shops path,
+.nav-dropdown-rewards svg path {
+  stroke: var(--sub-text-color);
 }
 
 .header-bottom li {
@@ -223,7 +230,7 @@ header {
   text-wrap: nowrap;
 }
 
-.header-top div:first-child,
+.header-top > div:first-child,
 .header-top li {
   display: flex;
   align-items: center;
@@ -235,7 +242,7 @@ header {
 .header-bottom li:hover {
   background-color: rgba(195, 222, 255, 0.5);
 }
-.header-top div:first-child:hover,
+.header-top > div:first-child:hover,
 .header-top li:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
@@ -309,7 +316,7 @@ header {
 .login-popup {
   position: absolute;
   background-color: var(--white-color);
-  border-radius: 0.93rem;
+  border-radius: var(--popup-radius);
   display: none;
   flex-direction: column;
   color: var(--main-text-color);
@@ -420,8 +427,48 @@ header {
   display: none;
 }
 
+.nav-dropdown-shop-list {
+  position: absolute;
+  display: none;
+  width: 13.75rem;
+  height: 13.75rem;
+  top: 2.2rem;
+  left: 0;
+  background-color: var(--white-color);
+  box-shadow: var(--popup-box-shadow);
+  border-radius: var(--popup-radius);
+  z-index: 999;
+  padding: 0.8rem;
+}
+.nav-dropdown-shop-list > a:nth-of-type(1),
+.nav-dropdown-shop-list > a:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  border-radius: 0.6rem;
+  height: 2.25rem;
+  /* padding: 1.2rem auto; */
+}
+.nav-dropdown-shop-list > a:nth-of-type(1) {
+  background-color: var(--primary-color);
+}
+.nav-dropdown-shop-list > a:nth-of-type(2) {
+  background-color: #e75c96;
+}
+
+.nav-dropdown-shop-list > a:first-of-type:hover > svg path {
+  fill: var(--secondary-color);
+}
+
+.nav-dropdown-shop-list > a svg {
+  width: 50%;
+  height: auto;
+}
+.nav-dropdown-shop-list > a svg path {
+  fill: white;
+}
+
 .qr-container {
-  border-radius: 0.93rem;
+  border-radius: var(--popup-radius);
   padding: 0.6rem;
   background-color: var(--white-color);
   position: absolute;
@@ -569,7 +616,7 @@ header {
 }
 .hero-buttons > a {
   width: clamp(6.8rem, 10vw, 10rem);
-  padding: clamp(0.3rem, 1vw, 0.6rem) 0;
+  padding: clamp(0.3rem, 1vw, 0.8rem) 0;
   border-radius: 2rem;
   cursor: pointer;
   font-size: clamp(0.9rem, 2vw, 1rem);
@@ -741,7 +788,6 @@ header {
 }
 
 .teams-item {
-  background-color: red;
   padding: 2rem 1rem;
   border-radius: var(--card-radius);
   width: 30rem;
