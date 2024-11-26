@@ -16,6 +16,9 @@
   --p-font-size: clamp(0.8rem, 1.8vw, 1rem);
   --dropdown-transition: 0.5s ease-out;
   --hover-on-blue-bg: rgba(0, 0, 0, 0.3);
+  --popup-box-shadow: 0px 106px 42px rgba(0, 0, 0, 0.01),
+    0px 60px 36px rgba(0, 0, 0, 0.05), 0px 27px 27px rgba(0, 0, 0, 0.09),
+    0px 7px 15px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
 @keyframes moveUpDown {
@@ -322,9 +325,7 @@ header {
   right: 0;
   z-index: 999;
   transform: translate(-30%, -50%);
-  box-shadow: 0px 106px 42px rgba(0, 0, 0, 0.01),
-    0px 60px 36px rgba(0, 0, 0, 0.05), 0px 27px 27px rgba(0, 0, 0, 0.09),
-    0px 7px 15px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--popup-box-shadow);
 }
 
 .login-popup img {
@@ -349,7 +350,6 @@ header {
 .login-popup ul {
   display: flex;
   flex-direction: column;
-  /* padding: 1.5rem; */
   background-color: var(--white-color);
 }
 .login-popup p {
@@ -420,6 +420,35 @@ header {
   display: none;
 }
 
+.qr-container {
+  display: none;
+  border-radius: 0.93rem;
+  padding: 0.6rem;
+  background-color: var(--white-color);
+  position: absolute;
+  top: 10rem;
+  z-index: 999;
+  right: -4.5rem;
+  transform: translate(-50%, -50%);
+}
+.qr-img {
+  max-width: 12.188rem;
+}
+
+.qr-container > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-icon {
+  width: 1.25rem;
+  height: auto;
+}
+
+.nav-dropdown-rewards:hover > .qr-container {
+  display: block;
+}
 @media screen and (width > 768px) {
   .main-header {
     height: 4.375rem;
