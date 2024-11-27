@@ -814,12 +814,12 @@ header {
   overflow-x: scroll;
   padding: 1rem clamp(1rem, 4vw, 1.8rem);
   gap: clamp(1rem, 3vw, 1.5rem);
-  max-width: 70rem;
+  max-width: 72rem;
 }
 
 .teams-item {
   position: relative;
-  padding: 2rem;
+  padding: clamp(2.5rem, 5vw, 4rem) 2rem;
   border-radius: var(--card-radius);
   width: clamp(30rem, 50vw, 45rem);
   display: grid;
