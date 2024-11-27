@@ -702,15 +702,31 @@ header {
   display: flex;
   overflow-x: auto;
   gap: clamp(1rem, 1.5vw, 1.5rem);
-  padding: 0 clamp(1rem, 4vw, 1.8rem);
+  padding: clamp(0.5, 1vw, 1rem) clamp(1rem, 4vw, 1.8rem);
+  overflow-y: hidden;
 }
 
 .about-card-item {
   position: relative;
 }
-.about-card-item {
-  transform: scale(1.03);
+
+/* commented hover effect / redundant but for reserve later */
+/* .about-card-item:hover img {
+  filter: blur(10px) brightness(0.7);
 }
+.about-card-item:hover .about-card-text {
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+}
+.about-card-item:hover .about-card-text h2 {
+  font-size: 2.2rem;
+  color: var(--white-color);
+  font-weight: 700;
+}
+.about-card-item:hover .about-card-text p {
+  font-weight: 500;
+} */
 .about-img {
   width: clamp(13rem, 30vw, 25rem);
   height: auto;
@@ -773,8 +789,9 @@ header {
   padding: clamp(1.5rem, 2.5vw, 2rem) clamp(1.5rem, 3vw, 4rem);
   border-radius: var(--card-radius);
 }
+
 .wju-item:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
 .wju-item > h2 {
@@ -1438,11 +1455,14 @@ footer div:first-child > form {
   justify-content: center;
   max-width: 30rem;
 }
+
+.footer-payment-icons li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .footer-payment-icons img:hover {
-  transform: scale(1.01);
-  background-color: var(--hover-on-blue-bg);
-  border-radius: 50%;
-  padding: 0 0.5rem;
+  transform: scale(1.15);
 }
 
 /* Dropdown footer-second-div mobile view */
@@ -1602,7 +1622,7 @@ footer div:first-child > form {
     position: absolute;
     width: 7.5rem;
     height: auto;
-    top: 8.5rem;
+    bottom: 24%;
     left: 1rem;
     /* animation: moveUpDown 3s ease-in-out infinite; */
     transition: transform 0.3s ease;
