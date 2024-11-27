@@ -1474,6 +1474,7 @@ footer div:first-child > form {
     animation: moveUpDown 3s ease-in-out infinite;
   } */
 
+  .h2-hidden,
   .footer-banner-img-confetti,
   .footer-banner-img-cover,
   .footer-third-last-child div hr {
