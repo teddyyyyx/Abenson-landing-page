@@ -737,12 +737,13 @@ header {
 }
 
 .wju-item {
+  min-width: 12rem;
   display: flex;
   flex-direction: column;
   text-align: center;
   width: clamp(18rem, 35vw, 22rem);
   background-color: rgb(245, 245, 245);
-  padding: clamp(0.8rem, 2.5vw, 2rem) clamp(1.5rem, 3vw, 4rem);
+  padding: clamp(1.5rem, 2.5vw, 2rem) clamp(1.5rem, 3vw, 4rem);
   border-radius: var(--card-radius);
 }
 .wju-item:hover {
@@ -751,6 +752,7 @@ header {
 
 .wju-item > h2 {
   font-weight: 500;
+  margin-bottom: 0.3rem;
   font-size: clamp(0.875rem, 2vw, 1.1rem);
 }
 
@@ -787,26 +789,79 @@ header {
 .teams-container {
   display: flex;
   overflow-x: scroll;
-  padding: 0 clamp(1rem, 4vw, 1.8rem);
+  padding: 1rem clamp(1rem, 4vw, 1.8rem);
   gap: clamp(1rem, 3vw, 1.5rem);
   max-width: 70rem;
 }
 
 .teams-item {
-  padding: 2rem 1rem;
+  position: relative;
+  padding: 2rem;
   border-radius: var(--card-radius);
-  width: 30rem;
+  width: clamp(30rem, 50vw, 45rem);
   display: grid;
   gap: 1rem;
 }
-.teams-item > h2 {
-  font-size: clamp(1rem, 2vw, 1.2rem);
+
+.teams-item p,
+.teams-item h2 {
   color: var(--white-color);
   text-align: center;
+}
+.teams-item p {
+  font-weight: 500;
+}
+
+.teams-item h2 {
+  font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
 .teams-img {
   width: clamp(10rem, 10vw, 18rem);
+}
+.teams-item a {
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  text-align: center;
+  border-radius: 2rem;
+  font: 1rem;
+  margin: 0.8rem auto 0;
+
+  padding: 0.5rem 1rem;
+  width: fit-content;
+  font-weight: 500;
+  font-size: var(--p-font-size);
+}
+.teams-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: absolute;
+  padding: 0 1.2rem;
+  top: 12%;
+  visibility: hidden;
+  /* display: none; */
+  cursor: pointer;
+  transition: opacity 1s ease;
+  opacity: 0;
+}
+
+.teams-item a:hover {
+  transform: scale(1.08);
+}
+
+.teams-item:hover {
+  /* filter: blur(5px); */
+}
+
+.teams-item:hover > img,
+.teams-item:hover > h2 {
+  visibility: hidden;
+}
+
+.teams-item:hover .teams-text {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* Teams Card Colors - 9 Cards */
@@ -833,7 +888,7 @@ header {
   background-color: #fae100;
 }
 .teams-item:nth-of-type(8) {
-  background-color: #5dca3d;
+  background-color: #19b6eb;
 }
 .teams-item:nth-of-type(9) {
   background-color: #735ff2;
