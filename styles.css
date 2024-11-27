@@ -1340,6 +1340,7 @@ footer div:first-child > form {
 
 .footer-banner-img {
   width: 100%;
+  height: auto;
 }
 
 .banner-container {
