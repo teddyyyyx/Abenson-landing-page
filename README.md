@@ -9,11 +9,11 @@
 
 ## Introduction : 🤟
 
-Hi, I'm Benz Samson Tagle, and I built this project entirely from scratch using only HTML and CSS. My focus was on minimizing JavaScript usage and leveraging the capabilities of modern HTML and CSS to create a responsive, clean, and optimized website.
+Hi, I'm Benz Samson Tagle, I built this project entirely from scratch using only HTML, CSS, and JavaScript. My focus was on minimizing JavaScript usage and leveraging the capabilities of modern HTML and CSS to create a responsive, clean, and optimized website. Javascript was mainly used for header search function and for IntersectionObserver to achieve elegance in section transitions.
 
-Modern web development offers advanced features that enable the creation of beautiful and interactive websites using just HTML and CSS. This approach results in a less bloated, lightweight website with superior performance.
+Modern web development offers advanced features that enable the creation of beautiful and interactive websites using just HTML and CSS. Javascript is only used for the necessary functions. This approach results in a less bloated, lightweight website with superior performance.
 
-This website is fully optimized and SEO-friendly, featuring appropriate meta tags such as `og:type`, `og:url`, `og:image`, `description`, and `keywords`. Images are handled with the `<picture>` tag, which allows for responsive and optimized image loading, serving WebP format for better performance while providing fallback JPEG or PNG images for browser compatibility. Icons are in proper SVG format to ensure smaller file sizes and faster loading times.
+This website is fully optimized and SEO-friendly, featuring appropriate meta tags such as `og:type`, `og:url`, `og:image`, `description`, and `keywords`. Images are handled with the `<picture>` tag, which allows for responsive and optimized image loading, serving WebP format for better performance while providing fallback JPEG or PNG images for browser compatibility. Icons are in proper SVG format to ensure smaller file sizes and faster loading times. Lazy laoding is highly used to defer unused images.
 
 I integrated web3forms for the form inputs which will automatically send input data to my email.
 
