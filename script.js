@@ -43,3 +43,17 @@ document.querySelectorAll("[data-animation]").forEach((element) => {
 });
 
 // Transition script written by Benzzzz
+
+// Redirecting nav search form to Abenson search url
+const form = document.getElementById("search-form"); // get form id
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault(); // Prevent the default form submission behavior (like page reload)
+  const query = document.getElementById("nav-search-input").value;
+
+  // add input value to url
+  const abensonSearch = `https://www.abenson.com/search.html/?q=${encodeURIComponent(
+    query
+  )}`;
+  window.open(abensonSearch); // open in new tab :)
+});

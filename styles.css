@@ -708,6 +708,9 @@ header {
 .about-card-item {
   position: relative;
 }
+.about-card-item {
+  transform: scale(1.03);
+}
 .about-img {
   width: clamp(13rem, 30vw, 25rem);
   height: auto;
