@@ -708,7 +708,7 @@ header {
   position: relative;
 }
 .about-img {
-  width: clamp(11.75rem, 30vw, 25rem);
+  width: clamp(13rem, 30vw, 25rem);
   height: auto;
   object-fit: contain;
   border-radius: 0.6rem;
