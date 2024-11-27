@@ -13,6 +13,8 @@ Modern web development offers advanced features that enable the creation of beau
 
 This website is fully optimized and SEO-friendly, featuring appropriate meta tags such as `og:type`, `og:url`, `og:image`, `description`, and `keywords`. Images are handled with the `<picture>` tag, which allows for responsive and optimized image loading, serving WebP format for better performance while providing fallback JPEG or PNG images for browser compatibility. Icons are in proper SVG format to ensure smaller file sizes and faster loading times.
 
+I integrated web3forms for the form inputs which will automatically send input data to my email.
+
 The project is uploaded to GitHub and deployed on Vercel for seamless accessibility.
 
 ## My Notes :: 🤟🤟
