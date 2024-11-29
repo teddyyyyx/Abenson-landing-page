@@ -994,6 +994,7 @@ header {
   margin-bottom: 0.8rem;
   overflow: hidden;
   height: 16rem;
+  transition: height 0.3s ease-in-out;
   max-width: 60rem;
   width: 100%;
   margin: 0 auto;
@@ -1612,7 +1613,7 @@ footer div:first-child > form {
 
   .footer-banner-img-confetti {
     position: absolute;
-    width: 28rem;
+    width: 110%;
     height: auto;
     top: 1.5rem;
     animation: moveUpDown 1.2s ease-in-out infinite;
@@ -1620,10 +1621,10 @@ footer div:first-child > form {
 
   .footer-banner-img-cover {
     position: absolute;
-    width: 7.5rem;
+    width: 28%;
     height: auto;
-    bottom: 24%;
-    left: 1rem;
+    bottom: 25%;
+    left: 5%;
     /* animation: moveUpDown 3s ease-in-out infinite; */
     transition: transform 0.3s ease;
   }
